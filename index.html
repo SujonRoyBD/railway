@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail sheba</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <section>
+        <header class="bg-gray-300">
+            <nav class=" flex justify-between items-center w-[90%] bg-gray-200 mx-auto">
+                <div class="flex">
+                    <img  src="./aseat/railway logo.png" alt="logo" height="70" width="70">
+                    <h3 class="text-3xl font-bold text-yellow-500 mt-5">Bangladesh Raillway</h3>
+                    </div>
+                    <div class="nav-links md:static absolute  md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5" >
+                        <ul class=" flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+                            <li class="hover:text-violet-500">
+                                <a c href="#">Home</a>
+                            </li>
+                            <li class="hover:text-violet-500">
+                                <a c href="#">About Us</a>
+                            </li>
+                            <li class="hover:text-violet-500">
+                                <a c href="#">Blogs</a>
+                            </li>
+                            <li class="hover:text-violet-500">
+                                <a c href="#">Contact Us</a>
+                            </li>
+                            
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <button class="rounded-full bg-green-500 p-2 hover:bg-yellow-300"> <a href="signin.html">Sing In</a> </button>
+                        <ion-icon onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" name="menu-outline"></ion-icon>
+                    </div>
+                    
+            </nav>
+             </header>
+        <!-- <nav class="flex gap-20 bg-gray-200">
+            <div class="flex">
+                <img src="./aseat/railway logo.png" alt="logo" height="100" width="100">
+                <h3 class="text-3xl font-bold text-yellow-500 mt-5">Bangladesh Raillway</h3>
+            </div>
+            <div>
+                <ul class="flex text-green-500 gap-3 mt-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Resister</a></li>
+                    <li><a href="#">Verify Ticket</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-12 gap-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  p-20 sm:gap-2 md:gap-16 shadow-lg  ">
+                <div class="">
+                    <label class="" for="">
+                        <p class="text-xl">From</p>
+                        <input class="border-2 h-[40px] w-[300px] p-4 shadow-lg" placeholder="From station" type="text">
+                        <p class="text-xl mt-6">Date of Journey</p>
+                        <input class="border-2 h-[40px] w-[300px] p-4" placeholder="Pick a date" type="text" name="" id="">
+                    </label>
+                </div>
+                <div class="">
+                    <label for="">
+                        <p class="text-xl">To</p>
+                        <input class="border-2 h-[40px] w-[300px] p-4" placeholder="From station" type="text">
+                        <p class="text-xl mt-6 ">Chose the class</p>
+                       <select  class="h-[40px] w-[305px] p-3 bg-white border-2" name="" id=""  > <option value="">AC_B</option>
+                        <option value="">AC_C</option>
+                        <option value="">AC_S</option>
+                        <option value="">SINIDHA</option>
+                        <option value="">F_BERTH</option>
+                        <option value="">F_SEAT</option>
+                        <option value="">F_CHAIR</option>
+                        <option value="">S_CHAIR</option>
+                        <option value="">SHOVAN</option>
+                        <option value="">SHULOV</option>
+                        
+                    </select>
+                   
+                   
+                    </label>
+                    
+                    <div  class="mt-5  md:-ml-[410px] sm:h-[50px] w-[200px] grid w-[200px]">
+                        <button class="bg-green-500 h-[50px] w-[300px] md:w-[715px] font-bold hover:bg-gray-400"><a href="confirm.html">Submit From</a></button>
+                    </div>
+                </div>
+               
+            </div>
+            <div>
+                <img src="./aseat/train.jpg" alt="train" height="300" width="800">
+            </div>
+        </div>
+
+        <div class="grid gap-20 grid-cols-1 md:grid-cols-3 px-[120px] justify-between">
+            <div class="text-3xl bg-gray-100 px-5">
+                <img src="./aseat/2.png" alt="">
+                <h2>Search</h2>
+                <p class="text-2xl">Choose your origin, destination, <br>journey dates and search for trains.</p>
+            </div>
+            
+                <div class="text-3xl bg-gray-100 px-5">
+                    <img src="./aseat/1.png" alt="">
+                    <h2>Select</h2>
+                    <p class="text-2xl">Select your desired trip and <br> choose your seats.</p>
+                </div>
+                <div class="text-3xl bg-gray-100 px-5">
+                    <img src="./aseat/3.png" alt="">
+                    <h2>Pay</h2>
+                    <p class="text-2xl">Pay for the tickets via Debit / <br> Credit Cards or bKash.</p>
+                </div>
+        </div>
+        <hr class=" h-[10px] w-[100%] bg-gray-300 mt-7">
+        <div class="flex justify-center mt-12 gap-7">
+            
+                <img src="./aseat/visa.png" alt="visha">
+                <img src="./aseat/master-card.png" alt="master">
+                <img src="./aseat/bkash.png" alt=" bikash">
+            
+        </div>
+        <hr class=" h-[10px] w-[100%] bg-gray-300 mt-7">
+        <p>* The Tickets are issued by Bangladesh Railway’s Centrally Computerized Seat Reservation & Ticketing System (CCSRTS) and Shohoz-Synesis-Vincen JV is responsible for <br> designing,development, implementation, technical operation & maintenance of the system.</p>
+        <hr class=" h-[10px] w-[100%] bg-green-300 mt-7">
+        <div class="flex">
+            <div>
+                <img src="./aseat/railway logo.png" alt="railway">
+            </div>
+            <div class="mt-6">
+                <h3 class="text-2xl text-yellow-500">Bangladesh Railway</h3>
+                <h3 class="text-2xl text-green-500">নিরাপদ . আরামদায়ক . সাশ্রয়ী</h3>
+            </div>
+        </div>
+        <div class="ml-0 md:ml-[200px] px-12 text-2xl">
+            <p class="ml-5">powered By</p>
+            <h3 class="text-green-600">Shohoz-Synesis-Vincen JV </h3>
+        </div>
+    </section>
+</body>
+</html>
